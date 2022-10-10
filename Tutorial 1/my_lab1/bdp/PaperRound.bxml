@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Machine xmlns='https://www.atelierb.eu/Formats/bxml' version='1.0' name='PaperRound' type='abstraction' position='true' semantic='true' b0check='false'>
+<Abstract_Variables>
+<Attr>
+<Pos l='7' c='1' s='18'/>
+</Attr>
+<Id value='houseset' typref='2'>
+<Attr>
+<Pos l='7' c='11' s='8'/>
+</Attr>
+</Id>
+</Abstract_Variables>
+<Invariant>
+<Attr>
+<Pos l='8' c='1' s='9'/>
+</Attr>
+<Exp_Comparison op='&lt;:'>
+<Attr>
+<Pos l='9' c='14' s='2'/>
+</Attr>
+<Id value='houseset' typref='2'>
+<Attr>
+<Pos l='9' c='5' s='8'/>
+</Attr>
+</Id>
+<Id value='NAT1' typref='2'>
+<Attr>
+<Pos l='9' c='17' s='4'/>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Invariant>
+<Initialisation>
+<Attr>
+<Pos l='10' c='1' s='14'/>
+</Attr>
+<Assignement_Sub>
+<Attr>
+<Pos l='11' c='14' s='2'/>
+</Attr>
+<Variables>
+<Id value='houseset' typref='2'>
+<Attr>
+<Pos l='11' c='5' s='8'/>
+</Attr>
+</Id>
+</Variables>
+<Values>
+<EmptySet typref='2'>
+<Attr>
+<Pos l='11' c='17' s='2'/>
+</Attr>
+</EmptySet>
+</Values>
+</Assignement_Sub>
+</Initialisation>
+<Operations>
+<Operation name='add'>
+<Attr>
+<Pos l='13' c='5' s='3' endLine='18'/>
+</Attr>
+<Input_Parameters>
+<Id value='new' typref='1'>
+<Attr>
+<Pos l='13' c='9' s='3'/>
+</Attr>
+</Id>
+</Input_Parameters>
+<Precondition>
+<Nary_Pred op='&amp;'>
+<Exp_Comparison op=':'>
+<Attr>
+<Pos l='15' c='13' s='1'/>
+</Attr>
+<Id value='new' typref='1'>
+<Attr>
+<Pos l='15' c='9' s='3'/>
+</Attr>
+</Id>
+<Id value='NAT1' typref='2'>
+<Attr>
+<Pos l='15' c='15' s='4'/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op='/:'>
+<Attr>
+<Pos l='15' c='26' s='2'/>
+</Attr>
+<Id value='new' typref='1'>
+<Attr>
+<Pos l='15' c='22' s='3'/>
+</Attr>
+</Id>
+<Id value='houseset' typref='2'>
+<Attr>
+<Pos l='15' c='29' s='8'/>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Nary_Pred>
+</Precondition>
+<Body>
+<Assignement_Sub>
+<Attr>
+<Pos l='17' c='18' s='2'/>
+</Attr>
+<Variables>
+<Id value='houseset' typref='2'>
+<Attr>
+<Pos l='17' c='9' s='8'/>
+</Attr>
+</Id>
+</Variables>
+<Values>
+<Binary_Exp op='\/' typref='2'>
+<Attr>
+<Pos l='17' c='30' s='2'/>
+</Attr>
+<Id value='houseset' typref='2'>
+<Attr>
+<Pos l='17' c='21' s='8'/>
+</Attr>
+</Id>
+<Nary_Exp op='{' typref='2'>
+<Attr>
+<Pos l='17' c='33' s='1'/>
+</Attr>
+<Id value='new' typref='1'>
+<Attr>
+<Pos l='17' c='34' s='3'/>
+</Attr>
+</Id>
+</Nary_Exp>
+</Binary_Exp>
+</Values>
+</Assignement_Sub>
+</Body>
+</Operation>
+<Operation name='number'>
+<Attr>
+<Pos l='20' c='5' s='3' endLine='23'/>
+</Attr>
+<Output_Parameters>
+<Id value='ans' typref='1'>
+<Attr>
+<Pos l='20' c='5' s='3'/>
+</Attr>
+</Id>
+</Output_Parameters>
+<Body>
+<Assignement_Sub>
+<Attr>
+<Pos l='22' c='13' s='2'/>
+</Attr>
+<Variables>
+<Id value='ans' typref='1'>
+<Attr>
+<Pos l='22' c='9' s='3'/>
+</Attr>
+</Id>
+</Variables>
+<Values>
+<Unary_Exp op='card' typref='1'>
+<Attr>
+<Pos l='22' c='16' s='4'/>
+</Attr>
+<Id value='houseset' typref='2'>
+<Attr>
+<Pos l='22' c='21' s='8'/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Values>
+</Assignement_Sub>
+</Body>
+</Operation>
+</Operations>
+<TypeInfos>
+<Type id='0'>
+<Id value='BOOL'/>
+</Type>
+<Type id='1'>
+<Id value='INTEGER'/>
+</Type>
+<Type id='2'>
+<Unary_Exp op='POW'>
+<Id value='INTEGER'/>
+</Unary_Exp>
+</Type>
+<Type id='3'>
+<Unary_Exp op='POW'>
+<Unary_Exp op='POW'>
+<Id value='INTEGER'/>
+</Unary_Exp>
+</Unary_Exp>
+</Type>
+</TypeInfos>
+
+</Machine>

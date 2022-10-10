@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<db_xml>
+    <atelierb version="3_7_ubuntu-cvs" />
+    <project decomp_dir="C:\Users\andre\Code\6SENG005C Formal Methods\Tutorial 1\my_lab1\bdp\expand_src" old_decomp_dir="C:\Users\andre\Code\6SENG005C Formal Methods\Tutorial 1\my_lab1\bdp\src">
+        <!-- Definition directory list -->
+        <!-- Proof mechanisms -->
+        <!-- Component file list -->
+        <component_file path="C:/Users/andre/Code/6SENG005C Formal Methods/Tutorial 1/my_lab1" name="PaperRound" suffix="mch" user="andre">
+            <component name="PaperRound" type="specification" />
+        </component_file>
+    </project>
+</db_xml>
