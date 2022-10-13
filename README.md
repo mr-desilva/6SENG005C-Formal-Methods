@@ -38,6 +38,7 @@ Eg: - C:/...../Formal Methods/Tutorial 1`
 
 > Eg: -- For the Tutorial 2 it should be as follow
 >> Project Database path >> C:/..../Formal Methods/Tutorial 2/my_lab1/bdp
+
 >> Translation Directory path >> C:/..../Formal Methods/Tutorial 2/my_lab1/lang
 
 It took a little time to understand how the folder structure with the atelierB, hope this will help anyone in the future for reference **😄**
@@ -74,3 +75,11 @@ After removing the workspace from the atelierB, you have to manually clear the r
 
 `If you create a project named my_lab1 under the Tutorial 1 workspace, there will be a generated .desc file
 as my_lab1.desc under the Tutorial 1 workspace directory path`
+
+Thanks to [@manthilaDev](https://github.com/manthilaDev) we got this information about the workspaces, from the AtelierB developers.
+
+>Yes. Atelier B stores information on the workspaces in the Windows registry. You may edit the registry to remove these workspaces. Regedit is the Windows program to edit the registry.  
+
+>Navigate to HKEY_CURRENT_USER\SOFTWARE\ClearSy\AtelierB full x.y.z\atbwindow\configs
+
+>where x.y.z is your version of Atelier B
