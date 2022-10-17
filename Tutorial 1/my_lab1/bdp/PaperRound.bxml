@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<Machine xmlns='https://www.atelierb.eu/Formats/bxml' version='1.0' name='PaperRound' type='abstraction' position='true' semantic='true' b0check='false'>
+<Machine xmlns='https://www.atelierb.eu/Formats/bxml' version='1.0' name='paperRound' type='abstraction' position='true' semantic='true' b0check='false'>
 <Abstract_Variables>
 <Attr>
 <Pos l='7' c='1' s='18'/>
@@ -12,43 +12,43 @@
 </Abstract_Variables>
 <Invariant>
 <Attr>
-<Pos l='8' c='1' s='9'/>
+<Pos l='9' c='1' s='9'/>
 </Attr>
 <Exp_Comparison op='&lt;:'>
 <Attr>
-<Pos l='9' c='14' s='2'/>
+<Pos l='10' c='14' s='2'/>
 </Attr>
 <Id value='houseset' typref='2'>
 <Attr>
-<Pos l='9' c='5' s='8'/>
+<Pos l='10' c='5' s='8'/>
 </Attr>
 </Id>
 <Id value='NAT1' typref='2'>
 <Attr>
-<Pos l='9' c='17' s='4'/>
+<Pos l='10' c='16' s='4'/>
 </Attr>
 </Id>
 </Exp_Comparison>
 </Invariant>
 <Initialisation>
 <Attr>
-<Pos l='10' c='1' s='14'/>
+<Pos l='12' c='1' s='14'/>
 </Attr>
 <Assignement_Sub>
 <Attr>
-<Pos l='11' c='14' s='2'/>
+<Pos l='13' c='14' s='2'/>
 </Attr>
 <Variables>
 <Id value='houseset' typref='2'>
 <Attr>
-<Pos l='11' c='5' s='8'/>
+<Pos l='13' c='5' s='8'/>
 </Attr>
 </Id>
 </Variables>
 <Values>
 <EmptySet typref='2'>
 <Attr>
-<Pos l='11' c='17' s='2'/>
+<Pos l='13' c='17' s='2'/>
 </Attr>
 </EmptySet>
 </Values>
@@ -57,12 +57,12 @@
 <Operations>
 <Operation name='add'>
 <Attr>
-<Pos l='13' c='5' s='3' endLine='18'/>
+<Pos l='16' c='5' s='3' endLine='21'/>
 </Attr>
 <Input_Parameters>
 <Id value='new' typref='1'>
 <Attr>
-<Pos l='13' c='9' s='3'/>
+<Pos l='16' c='9' s='3'/>
 </Attr>
 </Id>
 </Input_Parameters>
@@ -70,31 +70,31 @@
 <Nary_Pred op='&amp;'>
 <Exp_Comparison op=':'>
 <Attr>
-<Pos l='15' c='13' s='1'/>
+<Pos l='18' c='13' s='1'/>
 </Attr>
 <Id value='new' typref='1'>
 <Attr>
-<Pos l='15' c='9' s='3'/>
+<Pos l='18' c='9' s='3'/>
 </Attr>
 </Id>
 <Id value='NAT1' typref='2'>
 <Attr>
-<Pos l='15' c='15' s='4'/>
+<Pos l='18' c='15' s='4'/>
 </Attr>
 </Id>
 </Exp_Comparison>
 <Exp_Comparison op='/:'>
 <Attr>
-<Pos l='15' c='26' s='2'/>
+<Pos l='18' c='26' s='2'/>
 </Attr>
 <Id value='new' typref='1'>
 <Attr>
-<Pos l='15' c='22' s='3'/>
+<Pos l='18' c='22' s='3'/>
 </Attr>
 </Id>
 <Id value='houseset' typref='2'>
 <Attr>
-<Pos l='15' c='29' s='8'/>
+<Pos l='18' c='29' s='8'/>
 </Attr>
 </Id>
 </Exp_Comparison>
@@ -103,32 +103,32 @@
 <Body>
 <Assignement_Sub>
 <Attr>
-<Pos l='17' c='18' s='2'/>
+<Pos l='20' c='18' s='2'/>
 </Attr>
 <Variables>
 <Id value='houseset' typref='2'>
 <Attr>
-<Pos l='17' c='9' s='8'/>
+<Pos l='20' c='9' s='8'/>
 </Attr>
 </Id>
 </Variables>
 <Values>
 <Binary_Exp op='\/' typref='2'>
 <Attr>
-<Pos l='17' c='30' s='2'/>
+<Pos l='20' c='30' s='2'/>
 </Attr>
 <Id value='houseset' typref='2'>
 <Attr>
-<Pos l='17' c='21' s='8'/>
+<Pos l='20' c='21' s='8'/>
 </Attr>
 </Id>
 <Nary_Exp op='{' typref='2'>
 <Attr>
-<Pos l='17' c='33' s='1'/>
+<Pos l='20' c='33' s='1'/>
 </Attr>
 <Id value='new' typref='1'>
 <Attr>
-<Pos l='17' c='34' s='3'/>
+<Pos l='20' c='34' s='3'/>
 </Attr>
 </Id>
 </Nary_Exp>
@@ -139,38 +139,194 @@
 </Operation>
 <Operation name='number'>
 <Attr>
-<Pos l='20' c='5' s='3' endLine='23'/>
+<Pos l='23' c='5' s='3' endLine='26'/>
 </Attr>
 <Output_Parameters>
 <Id value='ans' typref='1'>
 <Attr>
-<Pos l='20' c='5' s='3'/>
+<Pos l='23' c='5' s='3'/>
 </Attr>
 </Id>
 </Output_Parameters>
 <Body>
 <Assignement_Sub>
 <Attr>
-<Pos l='22' c='13' s='2'/>
+<Pos l='25' c='13' s='2'/>
 </Attr>
 <Variables>
 <Id value='ans' typref='1'>
 <Attr>
-<Pos l='22' c='9' s='3'/>
+<Pos l='25' c='9' s='3'/>
 </Attr>
 </Id>
 </Variables>
 <Values>
 <Unary_Exp op='card' typref='1'>
 <Attr>
-<Pos l='22' c='16' s='4'/>
+<Pos l='25' c='16' s='4'/>
 </Attr>
 <Id value='houseset' typref='2'>
 <Attr>
-<Pos l='22' c='21' s='8'/>
+<Pos l='25' c='22' s='8'/>
 </Attr>
 </Id>
 </Unary_Exp>
+</Values>
+</Assignement_Sub>
+</Body>
+</Operation>
+<Operation name='getsPapers'>
+<Attr>
+<Pos l='28' c='5' s='9' endLine='33'/>
+</Attr>
+<Output_Parameters>
+<Id value='numbHouse' typref='1'>
+<Attr>
+<Pos l='28' c='5' s='9'/>
+</Attr>
+</Id>
+</Output_Parameters>
+<Input_Parameters>
+<Id value='houseNumber' typref='1'>
+<Attr>
+<Pos l='28' c='29' s='11'/>
+</Attr>
+</Id>
+</Input_Parameters>
+<Precondition>
+<Nary_Pred op='&amp;'>
+<Exp_Comparison op=':'>
+<Attr>
+<Pos l='30' c='22' s='1'/>
+</Attr>
+<Id value='houseNumber' typref='1'>
+<Attr>
+<Pos l='30' c='10' s='11'/>
+</Attr>
+</Id>
+<Id value='NAT1' typref='2'>
+<Attr>
+<Pos l='30' c='24' s='4'/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=':'>
+<Attr>
+<Pos l='30' c='43' s='1'/>
+</Attr>
+<Id value='houseNumber' typref='1'>
+<Attr>
+<Pos l='30' c='31' s='11'/>
+</Attr>
+</Id>
+<Id value='houseset' typref='2'>
+<Attr>
+<Pos l='30' c='45' s='8'/>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Nary_Pred>
+</Precondition>
+<Body>
+<Assignement_Sub>
+<Attr>
+<Pos l='32' c='20' s='2'/>
+</Attr>
+<Variables>
+<Id value='numbHouse' typref='1'>
+<Attr>
+<Pos l='32' c='10' s='9'/>
+</Attr>
+</Id>
+</Variables>
+<Values>
+<Integer_Literal value='1' typref='1'>
+<Attr>
+<Pos l='32' c='23' s='1'/>
+</Attr>
+</Integer_Literal>
+</Values>
+</Assignement_Sub>
+</Body>
+</Operation>
+<Operation name='cancelPapers'>
+<Attr>
+<Pos l='35' c='5' s='12' endLine='40'/>
+</Attr>
+<Input_Parameters>
+<Id value='houseNumber' typref='1'>
+<Attr>
+<Pos l='35' c='18' s='11'/>
+</Attr>
+</Id>
+</Input_Parameters>
+<Precondition>
+<Nary_Pred op='&amp;'>
+<Exp_Comparison op=':'>
+<Attr>
+<Pos l='37' c='21' s='1'/>
+</Attr>
+<Id value='houseNumber' typref='1'>
+<Attr>
+<Pos l='37' c='9' s='11'/>
+</Attr>
+</Id>
+<Id value='NAT1' typref='2'>
+<Attr>
+<Pos l='37' c='23' s='4'/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=':'>
+<Attr>
+<Pos l='37' c='42' s='1'/>
+</Attr>
+<Id value='houseNumber' typref='1'>
+<Attr>
+<Pos l='37' c='30' s='11'/>
+</Attr>
+</Id>
+<Id value='houseset' typref='2'>
+<Attr>
+<Pos l='37' c='44' s='8'/>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Nary_Pred>
+</Precondition>
+<Body>
+<Assignement_Sub>
+<Attr>
+<Pos l='39' c='18' s='2'/>
+</Attr>
+<Variables>
+<Id value='houseset' typref='2'>
+<Attr>
+<Pos l='39' c='9' s='8'/>
+</Attr>
+</Id>
+</Variables>
+<Values>
+<Binary_Exp op='-s' typref='2'>
+<Attr>
+<Pos l='39' c='30' s='1'/>
+</Attr>
+<Id value='houseset' typref='2'>
+<Attr>
+<Pos l='39' c='21' s='8'/>
+</Attr>
+</Id>
+<Nary_Exp op='{' typref='2'>
+<Attr>
+<Pos l='39' c='31' s='1'/>
+</Attr>
+<Id value='houseNumber' typref='1'>
+<Attr>
+<Pos l='39' c='32' s='11'/>
+</Attr>
+</Id>
+</Nary_Exp>
+</Binary_Exp>
 </Values>
 </Assignement_Sub>
 </Body>

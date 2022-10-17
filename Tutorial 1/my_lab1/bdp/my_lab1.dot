@@ -1,4 +1,4 @@
 digraph {
-PaperRound [ label=" PaperRound " shape= box ]
+paperRound [ label=" paperRound " shape= box ]
 
 }

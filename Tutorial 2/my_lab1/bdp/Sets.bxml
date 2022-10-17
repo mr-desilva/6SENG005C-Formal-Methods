@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Machine xmlns='https://www.atelierb.eu/Formats/bxml' version='1.0' name='Sets' type='abstraction' position='true' semantic='true' b0check='false'>
+<Sets>
+<Attr>
+<Pos l='7' c='1' s='4'/>
+</Attr>
+<Set>
+<Id value='PEOPLE' typref='4'>
+<Attr>
+<Pos l='8' c='5' s='6'/>
+</Attr>
+</Id>
+</Set>
+<Set>
+<Id value='ANSWER' typref='5'>
+<Attr>
+<Pos l='9' c='5' s='6'/>
+</Attr>
+</Id>
+<Enumerated_Values>
+<Id value='yes' typref='6'>
+<Attr>
+<Pos l='9' c='15' s='3'/>
+</Attr>
+</Id>
+<Id value='no' typref='6'>
+<Attr>
+<Pos l='9' c='20' s='2'/>
+</Attr>
+</Id>
+</Enumerated_Values>
+</Set>
+<Set>
+<Id value='CURSOR_KEY' typref='7'>
+<Attr>
+<Pos l='10' c='5' s='10'/>
+</Attr>
+</Id>
+<Enumerated_Values>
+<Id value='Up_Key' typref='8'>
+<Attr>
+<Pos l='10' c='19' s='6'/>
+</Attr>
+</Id>
+<Id value='Down_Key' typref='8'>
+<Attr>
+<Pos l='10' c='27' s='8'/>
+</Attr>
+</Id>
+<Id value='Left_Key' typref='8'>
+<Attr>
+<Pos l='10' c='37' s='8'/>
+</Attr>
+</Id>
+<Id value='Right_Key' typref='8'>
+<Attr>
+<Pos l='10' c='47' s='9'/>
+</Attr>
+</Id>
+</Enumerated_Values>
+</Set>
+<Set>
+<Id value='DIRECTION' typref='9'>
+<Attr>
+<Pos l='11' c='5' s='9'/>
+</Attr>
+</Id>
+<Enumerated_Values>
+<Id value='North' typref='10'>
+<Attr>
+<Pos l='11' c='18' s='5'/>
+</Attr>
+</Id>
+<Id value='South' typref='10'>
+<Attr>
+<Pos l='11' c='25' s='5'/>
+</Attr>
+</Id>
+<Id value='East' typref='10'>
+<Attr>
+<Pos l='11' c='32' s='4'/>
+</Attr>
+</Id>
+<Id value='West' typref='10'>
+<Attr>
+<Pos l='11' c='38' s='4'/>
+</Attr>
+</Id>
+</Enumerated_Values>
+</Set>
+</Sets>
+<Concrete_Constants>
+<Attr>
+<Pos l='12' c='1' s='18'/>
+</Attr>
+<Id value='Jim' typref='11'>
+<Attr>
+<Pos l='13' c='5' s='3'/>
+</Attr>
+</Id>
+<Id value='Sue' typref='11'>
+<Attr>
+<Pos l='13' c='10' s='3'/>
+</Attr>
+</Id>
+</Concrete_Constants>
+<Abstract_Variables>
+<Attr>
+<Pos l='18' c='1' s='18'/>
+</Attr>
+<Id value='dirs' typref='9'>
+<Attr>
+<Pos l='19' c='5' s='4'/>
+</Attr>
+</Id>
+<Id value='keys' typref='7'>
+<Attr>
+<Pos l='19' c='11' s='4'/>
+</Attr>
+</Id>
+<Id value='pointing' typref='10'>
+<Attr>
+<Pos l='19' c='17' s='8'/>
+</Attr>
+</Id>
+</Abstract_Variables>
+<Properties>
+<Attr>
+<Pos l='15' c='1' s='10'/>
+</Attr>
+<Nary_Pred op='&amp;'>
+<Exp_Comparison op=':'>
+<Attr>
+<Pos l='16' c='9' s='1'/>
+</Attr>
+<Id value='Jim' typref='11'>
+<Attr>
+<Pos l='16' c='5' s='3'/>
+</Attr>
+</Id>
+<Id value='PEOPLE' typref='4'>
+<Attr>
+<Pos l='16' c='11' s='6'/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=':'>
+<Attr>
+<Pos l='16' c='24' s='1'/>
+</Attr>
+<Id value='Sue' typref='11'>
+<Attr>
+<Pos l='16' c='20' s='3'/>
+</Attr>
+</Id>
+<Id value='PEOPLE' typref='4'>
+<Attr>
+<Pos l='16' c='26' s='6'/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op='/='>
+<Attr>
+<Pos l='16' c='39' s='2'/>
+</Attr>
+<Id value='Jim' typref='11'>
+<Attr>
+<Pos l='16' c='35' s='3'/>
+</Attr>
+</Id>
+<Id value='Sue' typref='11'>
+<Attr>
+<Pos l='16' c='42' s='3'/>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Nary_Pred>
+</Properties>
+<Invariant>
+<Attr>
+<Pos l='20' c='1' s='9'/>
+</Attr>
+<Nary_Pred op='&amp;'>
+<Exp_Comparison op='&lt;:'>
+<Attr>
+<Pos l='22' c='10' s='2'/>
+</Attr>
+<Id value='dirs' typref='9'>
+<Attr>
+<Pos l='22' c='5' s='4'/>
+</Attr>
+</Id>
+<Id value='DIRECTION' typref='9'>
+<Attr>
+<Pos l='22' c='13' s='9'/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op='&lt;:'>
+<Attr>
+<Pos l='22' c='30' s='2'/>
+</Attr>
+<Id value='keys' typref='7'>
+<Attr>
+<Pos l='22' c='25' s='4'/>
+</Attr>
+</Id>
+<Id value='CURSOR_KEY' typref='7'>
+<Attr>
+<Pos l='22' c='33' s='10'/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=':'>
+<Attr>
+<Pos l='22' c='55' s='1'/>
+</Attr>
+<Id value='pointing' typref='10'>
+<Attr>
+<Pos l='22' c='46' s='8'/>
+</Attr>
+</Id>
+<Id value='dirs' typref='9'>
+<Attr>
+<Pos l='22' c='57' s='4'/>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Nary_Pred>
+</Invariant>
+<Initialisation>
+<Attr>
+<Pos l='24' c='1' s='14'/>
+</Attr>
+<Assignement_Sub>
+<Attr>
+<Pos l='25' c='26' s='2'/>
+</Attr>
+<Variables>
+<Id value='dirs' typref='9'>
+<Attr>
+<Pos l='25' c='5' s='4'/>
+</Attr>
+</Id>
+<Id value='keys' typref='7'>
+<Attr>
+<Pos l='25' c='11' s='4'/>
+</Attr>
+</Id>
+<Id value='pointing' typref='10'>
+<Attr>
+<Pos l='25' c='17' s='8'/>
+</Attr>
+</Id>
+</Variables>
+<Values>
+<Nary_Exp op='{' typref='9'>
+<Attr>
+<Pos l='25' c='29' s='1'/>
+</Attr>
+<Id value='North' typref='10'>
+<Attr>
+<Pos l='25' c='30' s='5'/>
+</Attr>
+</Id>
+<Id value='South' typref='10'>
+<Attr>
+<Pos l='25' c='37' s='5'/>
+</Attr>
+</Id>
+</Nary_Exp>
+<Nary_Exp op='{' typref='7'>
+<Attr>
+<Pos l='25' c='45' s='1'/>
+</Attr>
+<Id value='Up_Key' typref='8'>
+<Attr>
+<Pos l='25' c='46' s='6'/>
+</Attr>
+</Id>
+<Id value='Down_Key' typref='8'>
+<Attr>
+<Pos l='25' c='54' s='8'/>
+</Attr>
+</Id>
+</Nary_Exp>
+<Id value='North' typref='10'>
+<Attr>
+<Pos l='25' c='65' s='5'/>
+</Attr>
+</Id>
+</Values>
+</Assignement_Sub>
+</Initialisation>
+<TypeInfos>
+<Type id='0'>
+<Id value='BOOL'/>
+</Type>
+<Type id='1'>
+<Id value='INTEGER'/>
+</Type>
+<Type id='2'>
+<Unary_Exp op='POW'>
+<Id value='INTEGER'/>
+</Unary_Exp>
+</Type>
+<Type id='3'>
+<Unary_Exp op='POW'>
+<Unary_Exp op='POW'>
+<Id value='INTEGER'/>
+</Unary_Exp>
+</Unary_Exp>
+</Type>
+<Type id='4'>
+<Unary_Exp op='POW'>
+<Id value='PEOPLE'/>
+</Unary_Exp>
+</Type>
+<Type id='5'>
+<Unary_Exp op='POW'>
+<Id value='ANSWER'/>
+</Unary_Exp>
+</Type>
+<Type id='6'>
+<Id value='ANSWER'/>
+</Type>
+<Type id='7'>
+<Unary_Exp op='POW'>
+<Id value='CURSOR_KEY'/>
+</Unary_Exp>
+</Type>
+<Type id='8'>
+<Id value='CURSOR_KEY'/>
+</Type>
+<Type id='9'>
+<Unary_Exp op='POW'>
+<Id value='DIRECTION'/>
+</Unary_Exp>
+</Type>
+<Type id='10'>
+<Id value='DIRECTION'/>
+</Type>
+<Type id='11'>
+<Id value='PEOPLE'/>
+</Type>
+</TypeInfos>
+
+</Machine>

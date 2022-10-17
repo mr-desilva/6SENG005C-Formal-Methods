@@ -2,7 +2,8 @@
  * Author: andre
  * Creation date: 10/10/2022
  */
-MACHINE PaperRound
+MACHINE paperRound
+    
 VARIABLES houseset
     
 INVARIANT
