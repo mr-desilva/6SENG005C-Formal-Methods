@@ -1,0 +1,23 @@
+digraph state {
+ graph [fontsize=12]
+rankdir=TB;
+"rm5" -> "empty" [label = "guests", color = "firebrick"];
+"rm4" -> "empty" [label = "guests", color = "firebrick"];
+"rm3" -> "Ian" [label = "guests", color = "firebrick"];
+"rm2" -> "empty" [label = "guests", color = "firebrick"];
+"rm1" -> "Tom" [label = "guests", color = "firebrick"];
+"rm1" -> "Sue" [label = "guests", color = "firebrick"];
+"rm1" -> "Ian" [label = "guests", color = "firebrick"];
+"rm5" [color = "#efdf84", style = "filled, solid", shape = "box"]
+"empty" [color = "#bdef6b", style = "filled, solid", shape = "box"]
+"rm4" [color = "#efdf84", style = "filled, solid", shape = "box"]
+"rm3" [color = "#efdf84", style = "filled, solid", shape = "box"]
+"Ian" [color = "#bdef6b", style = "filled, solid", shape = "box"]
+"rm2" [color = "#efdf84", style = "filled, solid", shape = "box"]
+"rm1" [color = "#efdf84", style = "filled, solid", shape = "box"]
+"Tom" [color = "#bdef6b", style = "filled, solid", shape = "box"]
+"Sue" [color = "#bdef6b", style = "filled, solid", shape = "box"]
+subgraph "cluster_ROOM" {node [style=filled,color=white]; label="ROOM"; style=filled;color=lightgrey; rm1; rm2; rm3; rm4; rm5; }
+subgraph "cluster_NAME" {node [style=filled,color=white]; label="NAME"; style=filled;color=lightgrey; Ian; Sue; Tom; empty; }
+subgraph "cluster_ANSWER" {node [style=filled,color=white]; label="ANSWER"; style=filled;color=lightgrey; }
+}

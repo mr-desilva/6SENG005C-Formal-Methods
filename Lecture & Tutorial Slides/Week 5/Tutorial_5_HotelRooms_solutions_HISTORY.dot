@@ -1,0 +1,33 @@
+digraph history {
+graph [nodesep=1.5, ranksep=1.5];
+0 [shape=box, color="#99BF38", fontsize=12, penwidth=2, label="0:\nguests(rm1) = empty,guests(rm2) = empty,guests(rm3) = empty,\nguests(rm4) = empty,guests(rm5) = empty"];
+
+1 [shape=box, color="#99BF38", fontsize=12, penwidth=2, label="1:\nguests(rm1) = Ian,guests(rm2) = empty,guests(rm3) = empty,\nguests(rm4) = empty,guests(rm5) = empty"];
+
+19 [shape=box, color="#99BF38", fontsize=12, penwidth=2, label="19:\nguests = \{(rm1\|-\>Ian),(rm2\|-\>Sue),(rm2\|-\>Tom),(rm3\|-\>empty),(rm4\|-\>empty),(rm5\|-\>empty)\}"];
+
+35 [shape=box, color="#99BF38", fontsize=12, penwidth=2, label="35:\nguests = \{(rm1\|-\>Ian),(rm2\|-\>Sue),(rm2\|-\>Tom),(rm3\|-\>Jim),(rm4\|-\>empty),(rm5\|-\>empty)\}"];
+
+44 [shape=box, color="#99BF38", fontsize=12, penwidth=2, label="44:\nguests(rm1) = Ian,guests(rm2) = empty,guests(rm3) = Jim,\nguests(rm4) = empty,guests(rm5) = empty"];
+
+63 [shape=box, color="#99BF38", fontsize=12, penwidth=2, label="63:\nguests = \{(rm1\|-\>Ian),(rm2\|-\>empty),(rm3\|-\>Ian),(rm3\|-\>Sue),(rm3\|-\>Tom),(rm4\|-\>empty),(rm5\|-\>empty)\}"];
+
+73 [shape=doubleoctagon, color="#99BF38", fontsize=12, penwidth=2, label="73:\nguests = \{(rm1\|-\>Ian),(rm1\|-\>Sue),(rm1\|-\>Tom),(rm2\|-\>empty),(rm3\|-\>Ian),(rm4\|-\>empty),(rm5\|-\>empty)\}"];
+
+root [shape=invtriangle, color="#99BF38", fontsize=12, penwidth=2, label="root:\nroot"];
+
+root -> 0 [style = dotted, color = black, label="INITIALISATION", fontsize=12];
+
+0 -> 1 [color = "#006391", label="guestsCheckIn(rm1,\{Ian\})", fontsize=12];
+
+1 -> 19 [color = "#006391", label="guestsCheckIn(rm2,\{Sue,Tom\})", fontsize=12];
+
+19 -> 35 [color = "#006391", label="guestsCheckIn(rm3,\{Jim\})", fontsize=12];
+
+35 -> 44 [color = "#006391", label="guestsCheckOut(rm2)", fontsize=12];
+
+44 -> 63 [color = "#006391", label="guestsCheckIn(rm3,\{Ian,Sue,Tom\})", fontsize=12];
+
+63 -> 73 [color = "#006391", label="guestsSwapRoom(rm1,rm3)", fontsize=12];
+
+}
