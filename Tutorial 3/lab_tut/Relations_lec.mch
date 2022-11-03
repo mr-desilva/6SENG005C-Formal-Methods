@@ -18,7 +18,7 @@ SETS
     LANGUAGE = { Welsh, French, English, Spanish, German, Italian }
     
 CONSTANTS
-    AA, XX
+    AA, XX,
     
 PROPERTIES
     AA <: LETTER & AA = {aa, bb} & 
