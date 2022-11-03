@@ -8,5 +8,8 @@
         <component_file path="C:/Users/andre/Code/6SENG005C Formal Methods/Tutorial 3/lab_tut" name="PaperRound" suffix="mch" user="andre">
             <component name="PaperRound" type="specification" />
         </component_file>
+        <component_file path="C:/Users/andre/Code/6SENG005C Formal Methods/Tutorial 3/lab_tut" name="Relations_lec" suffix="mch" user="andre">
+            <component name="Relations_lec" type="specification" />
+        </component_file>
     </project>
 </db_xml>
